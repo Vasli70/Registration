@@ -31,8 +31,6 @@ public class UserController {
              return userService.getUserByEmail(mail);
     }
 
-
-
     @PostMapping("/Register")
     public String addUser(@RequestBody User user) {
         userService.addUser(user);
